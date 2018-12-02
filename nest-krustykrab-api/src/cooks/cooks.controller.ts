@@ -18,17 +18,12 @@ import {
   
     @Get()
     async findAll(): Promise<Cook[]> {
-
-      
       return this.cooksSerivce.findAll();
     }
   
     @Post()
     @UsePipes(new ValidationPipe())
     async create(@Body() createCookDto:CreateCookDto) {
-  
-
-      
        return this.cooksSerivce.create(createCookDto);
     }
   }
