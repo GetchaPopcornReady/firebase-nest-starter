@@ -62,3 +62,4 @@ typings/
 
 #firebase stuff -> dont expose API key
 firebase-info.json
+nest-krustykrab-api/firebase-info.json
