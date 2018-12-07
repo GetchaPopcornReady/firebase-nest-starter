@@ -18,11 +18,8 @@ var cooksRef = db.ref("cooks");
 
 @Injectable()
 export class CooksService {
-  private readonly cooks: Cook[] = [];  //array of cooks rather than strings
+  //private readonly cooks: Cook[] = [];  //array of cooks rather than strings
 
-
-
-  
   async findAll(): Promise<String> {
     var x;
     console.log("x begins: " + x);
@@ -46,7 +43,7 @@ export class CooksService {
       age: cook.age
     });
 
-    this.cooks.push(cook);  //adding the cook to the array
+    //this.cooks.push(cook);  //adding the cook to the array
   }
 
   generateKey(): String{
