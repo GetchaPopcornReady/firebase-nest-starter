@@ -10,14 +10,13 @@ import {
   import { CreateCookDto } from './create-cook.dto';
   import { ValidationPipe } from '../common/validation.pipe';
 
-  
   @Controller('cooks')
   export class CooksController {
 
     constructor(private readonly cooksSerivce: CooksService) {}
   
     @Get()
-    async findAll(): Promise<Cook[]> {
+    async findAll(): Promise<String>{
       return this.cooksSerivce.findAll();
     }
   
